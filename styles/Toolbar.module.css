@@ -1,0 +1,73 @@
+.toolbar {
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar .buttongroup {
+  background-color: #04aa6d; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+}
+
+.toolbar button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 24px;
+}
+
+.toolbar .buttongroup button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+  border-left: none; /* Prevent double borders */
+}
+
+.toolbar .buttongroup button:nth-child(2) {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.buttongroup button:hover {
+  background-color: #3e8e41;
+}
+
+/*////////////////Input Range for BPM//////////////////////*/
+.bpmrange {
+    line-height: 1.5;
+}
+.bpmrange span {
+    color: #c6c6c6;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.bpmrange input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#ff4500, #ff4500);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bpmrange input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ff4500;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+.bpmrange input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}

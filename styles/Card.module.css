@@ -1,0 +1,185 @@
+.list_container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  justify-items: stretch;
+}
+
+.card {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  padding: 10px;
+  box-shadow: -5px 12px 16px -16px rgba(0, 0, 0, 0.59);
+  border: 2px solid #ececec;
+}
+
+.card .image_info {
+  position: relative;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .playbutton {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  cursor: pointer;
+}
+
+.card .ratings {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 1;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card .artist_info {
+  padding: 13px 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card .title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  min-height: 40px;
+}
+
+.card .year {
+  color: #a0a0a0;
+  margin: 0.2em 0 0 0;
+  font-size: 0.8em;
+}
+
+.card .features {
+  color: #4b67ad;
+  font-size: smaller;
+  margin: 0.1em 0 0 0;
+}
+
+.card .features a {
+  color: #6c84bf;
+}
+
+.card .artist {
+  margin: 1em auto;
+}
+
+.card .bpm {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-size: smaller;
+  background: #a1b1d6;
+  padding: 9px;
+}
+
+.card span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.card .tags {
+  border-radius: 2px;
+  border: 1px solid #c6c6c6;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+.card .tags span:nth-child(1) {
+  display: inline-block;
+  margin: 5px 5px 0;
+  font-size: small;
+  text-transform: capitalize;
+}
+
+.card .tags span:nth-child(2) {
+  display: block;
+  background-color: #ffc61a;
+  display: inline-block;
+  padding: 5px;
+  font-size: 11px;
+}
+
+.card .path_info {
+  font-size: 12px;
+  margin-bottom: 25px;
+  min-height: 30px;
+}
+
+.card .path_info a {
+  color: #6c84bf;
+}
+
+.card .buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.card .buttons button {
+  width: 100%;
+  border: none;
+  padding: 0.5em 0;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffc61a;
+  transition: all 0.3s;
+}
+
+.card .genre {
+  margin-bottom: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: right;
+}
+
+.card .buttons button:hover {
+  background: #ffc61a;
+  color: #fff;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .list_container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .card {
+    max-width: 400px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list_container {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
